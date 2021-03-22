@@ -38,4 +38,5 @@ fn foo<'a, T: ToFoo + ?Sized>(data: &'a T) {
 
 fn main() {
     foo("la la pa");
+    foo(&["la", "la", "pa"]);
 }
